@@ -26,13 +26,14 @@ p {
     PAGE HEADING STYLES
 =========================================*/
 .home-head { 
-  background-color:#cccc33;
+  background-color:#66aaff;
   width:100%;
   padding-top:140px;
   padding-bottom:40px;
-  margin:0px;
+  margin:1px;
   text-align:center;
   clear:both;
+  border-bottom: 10px solid #cccc33;
 }
 .head-first {
   font-size:250%;
@@ -84,6 +85,7 @@ p {
   width: 100%;
   margin:0px;
   padding:0px;
+  border-bottom: 10px solid #cccc33;
   overflow: hidden;
 }
 .navbar-sitename {
@@ -152,40 +154,37 @@ p {
   text-align:center;
   margin:auto;
   padding:20px;
+  display: flex;
+  width: 90%;
 }
 .blockHeader {
   text-align:center;
   margin:auto;
   padding:30px;
   background-color: #66aaff; 
-  width: fit-content;
-}
-.blockGreen {
-  top: 0;
-  vertical-align: text-top;
-  display: inline-block;
-  width: 25%;
-  min-height:300px;
-  padding: 15px;
-  margin: 5px;
-  background-color: #339933; 
+  width: 300px;
 }
 .blockBlue {
   top: 0;
   vertical-align: text-top;
-  display: inline-block;
   width: 25%;
-  min-height:300px;
   padding: 15px;
   margin: 5px;
   background-color: #66aaff; 
 }
+.blockGreen {
+  top: 0;
+  vertical-align: text-top;
+  width: 33%;
+  /*min-height:100px;*/
+  padding: 15px;
+  margin: 5px;
+  background-color: #339933; 
+}
 .blockRed {
   top: 0;
   vertical-align: text-top;
-  display: inline-block;
-  width: 25%;
-  min-height:300px;
+  width: 33%;
   padding: 15px;
   margin: 5px;
   background-color: #cc3300; 
@@ -193,9 +192,7 @@ p {
 .blockYellow {
   top: 0;
   vertical-align: text-top;
-  display: inline-block;
-  width: 25%;
-  min-height:300px;
+  width: 33%;
   padding: 15px;
   margin: 5px;
   background-color: #cccc33; 
@@ -203,9 +200,7 @@ p {
 .blockBorder {
   top: 0;
   vertical-align: text-top;
-  display: inline-block;
-  width: 25%;
-  min-height:300px;
+  width: 33%;
   padding: 15px;
   margin: 5px;
   border:1px solid #ff9900;
@@ -235,7 +230,10 @@ p {
   margin: auto; 
   margin-bottom: 15px;
   padding-bottom:5px;
-  vertical-align: middle;
+}
+.field {
+  margin: 5px;
+  padding: 5px;
 }
 /*=======================================
     FOOTER STYLES
@@ -254,10 +252,13 @@ p {
   .head-main { 
     font-size:28px ;
   }
-  .block1, .block2, .block3, .block4, .blockBorder {
+  .block1, .block2, .block3, .block4, .main-block, .blockHeader {
     display: block;
-    width: 75%;
+    width: 50%;
     margin:auto;
+  }
+  .blockGreen, .blockRed, .blockYellow, .blockBorder, iframe {
+    width: 80%;
   }
   .main-image {
     width:80%;

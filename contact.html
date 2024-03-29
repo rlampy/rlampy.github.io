@@ -2,28 +2,30 @@
 <html lang="en">
 
 <head>
-<meta charset="utf-8">
-<meta name="description" content="A sample website for student development">
-<meta name="author" content="Ruth Lamprecht, Ph.D.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A sample website for student development">
+  <meta name="author" content="Ruth Lamprecht, Ph.D.">
 
-<title>CIS 265 - Contact</title>
-<link rel="icon" href="images/AmboxGlobe.png" />
+  <title>CIS 265 - Contact</title>
+  <link rel="icon" href="images/AmboxGlobe.png" >
 
-<link href="style.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link href="style.css" rel="stylesheet" >
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <script src="formProcessing.js" defer></script>
 </head>
 
 <body>
 <!-- NAV SECTION -->
 <div class="navbar">
-  <div class="navbar-sitename">CIS 265 <em>Web Design and E-Commerce</em></div>
+  <div class="navbar-sitename">CMSCI 256 <em>Software Development</em></div>
   <div class="navbar-list">
-  <a href="index.html">HOME</a>
-  <a href="milestones.html">MILESTONES</a>
-  <a href="grading.html">GRADING</a>
-  <a href="contact.html" class="navbar-active">CONTACT</a>
-  <a href="about.html">ABOUT</a>
-  <a href="examplePHP.php">PHP</a>
+    <a href="index.html">HOME</a>
+    <a href="milestones.html">MILESTONES</a>
+    <a href="grading.html">GRADING</a>
+    <a href="contact.html" class="navbar-active">CONTACT</a>
+    <a href="about.html">ABOUT</a>
+    <a href="exampleJS.html">JS</a>
   </div>
   <div class="navbar-collapse"><div class="dropdown">
     <button class="dropbtn"><i class="fas fa-bars"></i></button>
@@ -33,7 +35,7 @@
     <a href="grading.html">GRADING</a>
     <a href="contact.html" class="navbar-active">CONTACT</a>
     <a href="about.html">ABOUT</a>
-    <a href="examplePHP.php">PHP</a>
+    <a href="exampleJS.html">JS</a>
     </div>
   </div></div>
 </div>
@@ -53,36 +55,44 @@
 <div class="main-block">
 <div class="blockGreen">
   <h4><i class="fa fa-laptop fa-2x"></i> By Email</h4>
-  <p>relamprecht AT vuu DOT edu</p>
+  <p>r.e.lamprecht AT msmary DOT edu</p>
 </div>
 <div class="blockYellow">
   <h4><i class="fa fa-phone fa-2x"></i> By Phone</h4>
-  <p>804 DASH 257 DASH 5671</p>
+  <p>301 DASH 447 DASH 5579</p>
 </div>
 <div class="blockRed">
   <h4><i class="fa fa-user fa-2x"></i> In Person</h4>
-  <p>Ellison 104-C</p>
+  <p>Coad 108</p>
 </div>
 </div>
 
 <div class="main-block">
 <div class="blockBorder">
-  <h3>Virginia Union University</h3>
-  <p>VUU is located in Richmond, VA.<br />
+  <h3>Mount St. Mary's University</h3>
+  <p>MSMU is located in Emmitsburg, MD.<br >
   More information can be found at: 
-  <a href="http://www.vuu.edu" target="_blank">www.vuu.edu</a></p>
+  <a href="http://www.msmary.edu" target="_blank">www.msmary.edu</a></p>
 </div>
 <div class="blockBorder">
-  <form action="contact_post.php" method="post" name="contact-post">
-  <input type="text" class="form-control" required="required" name="name" placeholder="Name">
-  <input type="text" class="form-control" required="required" name="subject" placeholder="Subject">
-  <input type="text" class="form-control" required="required" name="email" placeholder="Email">
-  <textarea id="message" required="required" name="message" class="form-control" rows="5" placeholder="Message"></textarea>
-
-  <button type="submit" class="btn btn-success">Submit Request</button>
-  <button type="reset" class="btn btn-success">Reset</button>
-
+  <h3>Sign Up</h3>
+  <form action="contact.html" method="post" id="signup" class="form-control">
+    <div class="field">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your fullname" >
+    </div>
+    <div class="field">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" placeholder="Enter your email address" >
+    </div>
+    <div class="field">
+      <button type="submit">Subscribe</button>
+    </div>
   </form>
+  <div id="response" style="display: none;">
+    <h4>Thank you for playing!</h4>
+    <p id="statement"></p>
+  </div>
 </div>
 <div class="blockBorder">
   <p>Note that the contact form is set up for practice and not for true functionality. 
@@ -91,14 +101,14 @@
 </div>
 
 <div class="main-block">
-<iframe class="cnt" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3220267.7162090177!2d-81.6699316582476!3d37.981967058933435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884cd670bdbcb2cd%3A0xc04e4149b746a695!2sVirginia!5e0!3m2!1sen!2sus!4v1505165079208" width="600" height="450" allowfullscreen></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12282.617019544185!2d-77.35899678624828!3d39.67999137156755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c9b73c62b602db%3A0xe1f1a725cfa7ff8b!2sMount%20St.%20Mary&#39;s%20University!5e0!3m2!1sen!2sus!4v1711544695306!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
 </div>
 <!--END MAIN SECTION-->
 
 <!--FOOTER SECTION -->
-<div id="footer">2019-2020 Academic Year | CIS 265</div>
+<div id="footer">2024 Spring Semester | CMSCI 256</div>
 <!-- END FOOTER SECTION -->
 
 </body>
