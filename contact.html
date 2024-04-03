@@ -12,7 +12,6 @@
 
   <link href="style.css" rel="stylesheet" >
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <script src="formProcessing.js" defer></script>
 </head>
 
 <body>
@@ -76,14 +75,16 @@
 </div>
 <div class="blockBorder">
   <h3>Sign Up</h3>
-  <form action="contact.html" method="post" id="signup" class="form-control">
+  <form action="contact-post.html" method="post" id="signup" class="form-control">
     <div class="field">
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter your fullname" >
+      <input type="text" id="name" name="name" placeholder="Enter your fullname" ><br>
+      <small></small>
     </div>
     <div class="field">
       <label for="email">Email:</label>
-      <input type="text" id="email" name="email" placeholder="Enter your email address" >
+      <input type="text" id="email" name="email" placeholder="Enter your email address" ><br>
+      <small></small>
     </div>
     <div class="field">
       <button type="submit">Subscribe</button>
@@ -91,9 +92,11 @@
   </form>
   <div id="response" style="display: none;">
     <h4>Thank you for playing!</h4>
-    <p id="statement"></p>
+    <p id="inputName"></p>
+    <p id="inputEmail"></p>
   </div>
 </div>
+<script src="formProcessing.js"></script>
 <div class="blockBorder">
   <p>Note that the contact form is set up for practice and not for true functionality. 
   To contact the instructor, the email listed on this page is valid.</p>

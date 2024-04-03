@@ -56,11 +56,12 @@ form.addEventListener("submit", function (event) {
 	if (nameValid && emailValid) {
         let name = form.elements["name"];
         let email = form.elements["email"];
-		//alert(name.value+"Demo only. No form was posted.");
         document.getElementById("response").style.display = "block";
-        document.getElementById("statement").innerHTML = name.value+" "+email.value;
+        document.getElementById("inputName").innerHTML = "Entered Name: "+name.value;
+        document.getElementById("inputEmail").innerHTML = "Entered Email: "+email.value;
         form.style.display = "none"
         name.value = "";
         email.value = "";
 	}
 });
+
