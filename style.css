@@ -223,6 +223,7 @@ p {
 }
 .main-inner {
   border:10px solid #cc3300;
+  width: 400px;
 }
 .form-control {
   display: block;
