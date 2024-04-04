@@ -77,6 +77,7 @@ window.onload = function () {
     showLives.innerHTML = "You have " + lives + " lives";
     if (lives < 1) {
       showLives.innerHTML = "Game Over";
+      document.getElementById('solution').innerHTML = word;
     }
     for (var i = 0; i < guesses.length; i++) {
       if (counter + space === guesses.length) {
@@ -226,6 +227,7 @@ window.onload = function () {
     correct.parentNode.removeChild(correct);
     letters.parentNode.removeChild(letters);
     showClue.innerHTML = "";
+    document.getElementById("solution").innerHTML = "??";
     context.clearRect(0, 0, 400, 400);
     play();
   }
