@@ -10,90 +10,77 @@
   <title>CMSCI 256 - Software Development</title>
   <link rel="icon" href="images/AmboxGlobe.png" >
 
-  <link href="style.css" rel="stylesheet" >
+  <link href="styles/main.css" rel="stylesheet" >
+  <script type="text/javascript" src="javascript/navigation.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
 
 <body>
+<!-- SITENAME SECTION -->
+<div class="sitename">CMSCI 256 <em>Software Development</em></div>
+<!-- END SITENAME SECTION -->
+
 <!-- NAV SECTION -->
-<div class="navbar">
-  <div class="navbar-sitename">CMSCI 256 <em>Software Development</em></div>
-  <div class="navbar-list">
-    <a href="index.html" class="navbar-active">HOME</a>
-    <a href="milestones.html">MILESTONES</a>
-    <a href="grading.html">GRADING</a>
-    <a href="contact.html">CONTACT</a>
-    <a href="about.html">ABOUT</a>
-    <a href="exampleJS.html">JS</a>
-  </div>
-  <div class="navbar-collapse"><div class="dropdown">
-    <button class="dropbtn"><i class="fas fa-bars"></i></button>
-    <div class="dropdown-content">
-    <a href="index.html" class="navbar-active">HOME</a>
-    <a href="milestones.html">MILESTONES</a>
-    <a href="grading.html">GRADING</a>
-    <a href="contact.html">CONTACT</a>
-    <a href="about.html">ABOUT</a>
-    <a href="exampleJS.html">JS</a>
-    </div>
-  </div></div>
-</div>
+<nav id="navbar" class="topnav">
+  <button class="icon" onclick="navClick()"><i class="fa fa-bars"></i></button>
+  <ul id="navlist">
+    <li><a class="active" href="index.html">HOME</a></li>
+    <li><a href="milestones.html">MILESTONES</a></li>
+    <li><a href="grading.html">GRADING</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="exampleJS.html">JS</a></li>
+  </ul>
+</nav>
 <!--END NAV SECTION -->
     
 <!--TITLE SECTION-->
-<div class="home-head">
-    <div class="head-first">CMSCI 256 FINAL PROJECT</div>
-    <div class="head-last">Full Stack Web Development</div>
-</div>
+<header class="home-head">
+  <h1 class="home-first">CMSCI 256 FINAL PROJECT</h1>
+  <h2 class="home-second">Full Stack Web Development</h2>
+</header>
 <!--END TITLE SECTION-->
 
 <!--MAIN SECTION-->
-<div class="main">
+<main id="main">
 
-<div class="main-block">
-<div class="blockGreen">
-  <h4>The Instructor</h4>
-  <p>Ruth Lamprecht, Ph.D.<br>
-    <em>Mathematics and Computer Science Department</em><br>
-    Mount St. Mary's University<br>Emmitsburg, MD</p>
-  </div>
-<div class="blockYellow">
-  <h4>The Class</h4>
-  <p>This course covers important programming concepts that are necessary for modern software.
-    These include: design patterns, testing, GUIs, threading, client-server networking, security, 
-    and mobile app development. Students will design and implement one or more moderately-sized
-    programming projects.</p>
-</div>
-<div class="blockRed">
-  <h4>The Project</h4>
-  <p>Students will design, develop, and publish a web site using recommended design practices. Completed sites
-    will be presented to the class; this project (with all written submissions) constitutes the final exam.</p>
-</div>
-</div>
+<section class="main-block">
+  <article class="blockGreen">
+    <h3>The Instructor</h3>
+    <p>Ruth Lamprecht, Ph.D.<br>
+      <em>Mathematics and Computer Science Department</em><br>
+      Mount St. Mary's University<br>Emmitsburg, MD</p>
+  </article>
+  <article class="blockYellow">
+    <h3>The Class</h3>
+    <p>This course covers important programming concepts that are necessary for modern software. These include: design patterns, testing, GUIs, threading, client-server networking, security, and mobile app development. Students will design and implement one or more moderately-sized
+      programming projects.</p>
+  </article>
+  <article class="blockRed">
+    <h3>The Project</h3>
+    <p>Students will design, develop, and publish a web site using recommended design practices. Completed sites will be presented to the class; this project (with all written submissions) constitutes the final exam.</p>
+  </article>
+</section>
 
-<div class="main-block">
-<div class="blockBorder">
-  <h4 class="adjst">Grading </h4>
-  <p>This project will be graded through a series of milestones designed to make this a semester-long project. 
-    This process will include planning and design, as well as a written report and presentation on the completed project.</p>
-</div>
-<div class="blockBorder">
-  <h4 class="adjst">Planning and Design</h4>
-  <p>Students will create a website of their own design, reflecting their own interests. The final website 
-    will be required to have a home page with four or five subpages.</p>
-</div>
-<div class="blockBorder">
-  <h4 class="adjst">Other Requirements</h4>
-  <p>Students are required to use an external style sheet to configure most text, color, and page layout. 
-    They must publish the project via guthub.com. Exact requirements are given in the milestone assignments.</p>
-</div>
-
-</div>
-</div>
+<section class="main-block">
+  <article class="blockBorder">
+    <h4>Grading</h4>
+    <p>This project will be graded through a series of milestones designed to make this a semester-long project. This process will include planning and design, as well as a written report and presentation on the completed project.</p>
+  </article>
+  <article class="blockBorder">
+    <h4 >Planning and Design</h4>
+    <p>Students will create a website of their own design, reflecting their own interests. The final website will be required to have a home page with four or five subpages.</p>
+  </article>
+  <article class="blockBorder">
+    <h4>Other Requirements</h4>
+    <p>Students are required to use an external style sheet to configure most text, color, and page layout. They must publish the project via guthub.com. Exact requirements are given in the milestone assignments.</p>
+  </article>
+</section>
+</main>
 <!--END MAIN SECTION-->
 
 <!--FOOTER SECTION -->
-<div id="footer">2024 Spring Semester | CMSCI 256</div>
+<footer id="footer">2025 Spring Semester | CMSCI 256</footer>
 <!-- END FOOTER SECTION -->
 
 </body>

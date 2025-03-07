@@ -10,97 +10,89 @@
   <title>CIS 265 - Example JS</title>
   <link rel="icon" href="images/AmboxGlobe.png" >
 
-  <link href="style.css" rel="stylesheet" >
+  <link href="styles/main.css" rel="stylesheet" >
+  <script type="text/javascript" src="javascript/navigation.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <link href="hangman.css" rel="stylesheet" >
-  <script src="hangman.js" defer></script>
+  <link href="styles/hangman.css" rel="stylesheet" >
+  <script type="text/javascript" src="javascript/hangman.js" defer></script>
 </head>
 
 <body>
+<!-- SITENAME SECTION -->
+<div class="sitename">CMSCI 256 <em>Software Development</em></div>
+<!-- END SITENAME SECTION -->
+
 <!-- NAV SECTION -->
-<div class="navbar">
-  <div class="navbar-sitename">CMSCI 256 <em>Software Development</em></div>
-  <div class="navbar-list">
-    <a href="index.html">HOME</a>
-    <a href="milestones.html">MILESTONES</a>
-    <a href="grading.html">GRADING</a>
-    <a href="contact.html">CONTACT</a>
-    <a href="about.html">ABOUT</a>
-    <a href="exampleJS.html" class="navbar-active">JS</a>
-  </div>
-  <div class="navbar-collapse"><div class="dropdown">
-    <button class="dropbtn"><i class="fas fa-bars"></i></button>
-    <div class="dropdown-content">
-    <a href="index.html">HOME</a>
-    <a href="milestones.html">MILESTONES</a>
-    <a href="grading.html">GRADING</a>
-    <a href="contact.html">CONTACT</a>
-    <a href="about.html">ABOUT</a>
-    <a href="exampleJS.html" class="navbar-active">JS</a>
-    </div>
-  </div></div>
-</div>
+<nav id="navbar" class="topnav">
+  <button class="icon" onclick="navClick()"><i class="fa fa-bars"></i></button>
+  <ul id="navlist">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="milestones.html">MILESTONES</a></li>
+    <li><a href="grading.html">GRADING</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a class="active" href="exampleJS.html">JS</a></li>
+  </ul>
+</nav>
 <!--END NAV SECTION -->
 
 <!--TITLE SECTION-->
-<div class="sub-head">
-    <div class="sub-first"><i class="fas fa-gamepad fa-2x"></i> Having Fun with JavaScript</div>
-    <div><p>This page has a simple JavaScript hangman game.</p></div>
-</div>
+<header class="sub-head">
+  <h1 class="sub-first"><i class="fas fa-gamepad fa-2x"></i> Having Fun with JavaScript</h1>
+  <h2 class="sub-second">This page has a simple JavaScript hangman game.</h2>
+</header>
 <!--END TITLE SECTION-->
 
 <!--MAIN SECTION-->
-<div class="main">
+<main id="main">
 
-<div class="main-block">
-    <div class="blockGreen">
-    <h4><i class="fa fa-laptop fa-2x"></i> Game Source</h4>
+<section class="main-block">
+  <article class="blockGreen">
+    <h3><i class="fa fa-laptop fa-2x"></i> Game Source</h3>
     <p> Author: Cathy Dutton<br>
-        Link: <a href="https://codepen.io/cathydutton/pen/JjpxMm" target="_blank">codepen.io</a>
+      Link: <a href="https://codepen.io/cathydutton/pen/JjpxMm" target="_blank">codepen.io</a>
     </p>
-    </div>
-    <div class="blockYellow">
-    <h4><i class="fa fa-book fa-2x"></i> Game Rules</h4>
+  </article>
+  <article class="blockYellow">
+    <h3><i class="fa fa-book fa-2x"></i> Game Rules</h3>
     <p>Click on a letter box to make a guess</p>
-    </div>
-    <div class="blockRed">
-    <h4><i class="fa fa-bullhorn fa-2x"></i> Solution</h4>
+  </article>
+  <article class="blockRed">
+    <h3><i class="fa fa-bullhorn fa-2x"></i> Solution</h3>
     <p id="solution">??</p>
-    </div>
-</div>
+  </article>
+</section>
 
-<div class="main-block">
-    <div class="blockBorder">
-        <h3>Letters</h3>
-        <div id="buttons">
-        </div>  
-        <button id="reset">Play again</button>
-    </div>
-    <div class="blockBorder">
-        <h3>Chosen Category</h3>
-        <p id="categoryName"></p>
-        <hr>
-        <h3>Secret Word</h3>
-        <div id="hold">
-        </div>
-        <hr>
-        <h3>Clue</h3>
-        <p id="clue"></p>  
-        <button id="hint">Hint</button>
-    </div>
-    <div class="blockBorder">
-        <h3>Lives</h3>
-        <p id="mylives"></p>
-        <hr>
-        <canvas id="stickman" width="200">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
-    </div>
-</div>
+<section class="main-block">
+  <article class="blockBorder">
+    <h4>Letters</h4>
+    <div id="letters"></div>  
+    <button id="reset">Play again</button>
+  </article>
+  <article class="blockBorder">
+    <h4>Chosen Category</h4>
+    <p id="categoryName"></p>
+    <hr>
+    <h3>Secret Word</h3>
+    <div id="hold"></div>
+    <hr>
+    <h4>Clue</h4>
+    <p id="clue"></p>  
+    <button id="hint">Hint</button>
+  </article>
+  <article class="blockBorder">
+    <h3>Lives</h3>
+    <p id="mylives"></p>
+    <hr>
+    <canvas id="stickman" width="200">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+  </article>
+</section>
 
-</div>
+</main>
 <!--END MAIN SECTION-->
 
 <!--FOOTER SECTION -->
-<div id="footer">2024 Spring Semester | CMSCI 256</div>
+<footer id="footer">2025 Spring Semester | CMSCI 256</footer>
 <!-- END FOOTER SECTION -->
 
 </body>

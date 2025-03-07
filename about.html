@@ -10,89 +10,76 @@
   <title>CIS 265 - About</title>
   <link rel="icon" href="images/AmboxGlobe.png" >
 
-  <link href="style.css" rel="stylesheet" >
+  <link href="styles/main.css" rel="stylesheet" >
+  <script type="text/javascript" src="javascript/navigation.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
 
 <body>
+<!-- SITENAME SECTION -->
+<div class="sitename">CMSCI 256 <em>Software Development</em></div>
+<!-- END SITENAME SECTION -->
+
 <!-- NAV SECTION -->
-<div class="navbar">
-  <div class="navbar-sitename">CMSCI 256 <em>Software Development</em></div>
-  <div class="navbar-list">
-    <a href="index.html">HOME</a>
-    <a href="milestones.html">MILESTONES</a>
-    <a href="grading.html">GRADING</a>
-    <a href="contact.html">CONTACT</a>
-    <a href="about.html" class="navbar-active">ABOUT</a>
-    <a href="exampleJS.html">JS</a>
-  </div>
-  <div class="navbar-collapse"><div class="dropdown">
-    <button class="dropbtn"><i class="fas fa-bars"></i></button>
-    <div class="dropdown-content">
-    <a href="index.html">HOME</a>
-    <a href="milestones.html">MILESTONES</a>
-    <a href="grading.html">GRADING</a>
-    <a href="contact.html">CONTACT</a>
-    <a href="about.html" class="navbar-active">ABOUT</a>
-    <a href="exampleJS.html">JS</a>
-    </div>
-  </div></div>
-</div>
+<nav id="navbar" class="topnav">
+  <button class="icon" onclick="navClick()"><i class="fa fa-bars"></i></button>
+  <ul id="navlist">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="milestones.html">MILESTONES</a></li>
+    <li><a href="grading.html">GRADING</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+    <li><a class="active" href="about.html">ABOUT</a></li>
+    <li><a href="exampleJS.html">JS</a></li>
+  </ul>
+</nav>
 <!--END NAV SECTION -->
 
 <!--TITLE SECTION-->
-<div class="sub-head">
-    <div class="sub-first"><i class="fas fa-question fa-2x"></i> About CMSCI 256</div>
-    <div>
-    <p>This course is required for the Computer Science major at the Mount and is optional for the minor.</p>
-    </div>
-</div>
+<header class="sub-head">
+  <h1 class="sub-first"><i class="fas fa-question fa-2x"></i> About CMSCI 256</h1>
+  <h2 class="sub-second">This course is required for the Computer Science major at the Mount and is optional for the minor.</h2>
+</header>
 <!--END TITLE SECTION-->
 
 <!--MAIN SECTION-->
-<div class="main">
+<main class="main">
 
-<div class="main-block">
-<div class="blockGreen">
-  <h4><i class="fas fa-search fa-2x"></i> The Location</h4>
-  <p>Mount St. Mary's University is located in Emmitsburg, MD. The Mount is a private, liberal arts, Catholic university.</p>
-</div>
-<div class="blockYellow">
-  <h4><i class="fas fa-paste fa-2x"></i> The Department</h4>
-  <p>The Mathematics and Computer Science department is located in the Coad Science Building. 
-    This department is part of the School of Natural Sciences and Mathematics.</p>
-</div>
-<div class="blockRed">
-  <h4><i class="fas fa-chalkboard-teacher fa-2x"></i> The Instructor</h4>
-  <p>Dr. Ruth Lamprecht earned her Ph.D. in Computer Science from the College of William 
-  &amp; Mary. Her research interests include CS education, programming, simulation, and modeling.</p>
-</div>
-</div>
+<section class="main-block">
+  <article class="blockGreen">
+    <h3><i class="fas fa-search fa-2x"></i> The Location</h3>
+    <p>Mount St. Mary's University is located in Emmitsburg, MD. The Mount is a private, liberal arts, Catholic university.</p>
+  </article>
+  <article class="blockYellow">
+    <h4><i class="fas fa-paste fa-2x"></i> The Department</h4>
+    <p>The Mathematics and Computer Science department is located in the Coad Science Building. This department is part of the School of Science, Mathematics &amp; Technology.</p>
+  </article>
+  <article class="blockRed">
+    <h4><i class="fas fa-chalkboard-teacher fa-2x"></i> The Instructor</h4>
+    <p>Dr. Ruth Lamprecht earned her Ph.D. in Computer Science from the College of William &amp; Mary. Her research interests include CS education, programming, simulation, and modeling.</p>
+  </article>
+</section>
 
-<div class="main-block">
-<div class="blockBorder">
-  <h3>Textbook</h3>
-  <p>This course uses the book "Web Development: Full Stack" 
-  by F. Max Coller (ISBN 9780357673973).</p>
-</div>
-<div class="blockBorder">
-  <h3>Course Outcomes</h3>
-  <p>After completing the course students will be able to understand the full stack  
-  development process, develop web applications using both client-side and server-side
-  technologies, and apply good software development practices and coding styles.</p>
-</div>
-<div class="blockBorder">
-  <h3>Learning Methods</h3>
-  <p>Besides the final project, lectures, labs, tests, and quizzes are among the main teaching tools 
-    used. Students must be prepared to discuss and apply relevant skills from the assigned chapters during class. </p>
-</div>
-</div>
+<section class="main-block">
+  <article class="blockBorder">
+    <h3>Textbook</h3>
+    <p>This course uses the book "Full Stack Web Development: The Comprehensive Guide" 
+    by Philip Ackermann (ISBN 9781493224388).</p>
+  </article>
+  <article class="blockBorder">
+    <h3>Course Outcomes</h3>
+    <p>After completing the course students will understand the full stack development process, develop web applications using both client-side and server-side technologies, and apply good software development practices and coding styles.</p>
+  </article>
+  <article class="blockBorder">
+    <h3>Learning Methods</h3>
+    <p>Besides the final project, lectures, labs, homework, and standards are among the main teaching tools used. Students must be prepared to discuss and apply relevant skills from the assigned chapters during class.</p>
+  </article>
+</section>
 
-</div>
+</main>
 <!--END MAIN SECTION-->
 
 <!--FOOTER SECTION -->
-<div id="footer">2024 Spring Semester | CMSCI 256</div>
+<footer id="footer">2025 Spring Semester | CMSCI 256</footer>
 <!-- END FOOTER SECTION -->
 
 </body>

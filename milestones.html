@@ -10,114 +10,108 @@
   <title>CIS 265 - Milestones</title>
   <link rel="icon" href="images/AmboxGlobe.png" >
 
-  <link href="style.css" rel="stylesheet" >
+  <link href="styles/main.css" rel="stylesheet" >
+  <script type="text/javascript" src="javascript/navigation.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
 
 <body>
+<!-- SITENAME SECTION -->
+<div class="sitename">CMSCI 256 <em>Software Development</em></div>
+<!-- END SITENAME SECTION -->
+
 <!-- NAV SECTION -->
-<div class="navbar">
-  <div class="navbar-sitename">CMSCI 256 <em>Software Development</em></div>
-  <div class="navbar-list">
-    <a href="index.html">HOME</a>
-    <a href="milestones.html" class="navbar-active">MILESTONES</a>
-    <a href="grading.html">GRADING</a>
-    <a href="contact.html">CONTACT</a>
-    <a href="about.html">ABOUT</a>
-    <a href="exampleJS.html">JS</a>
-  </div>
-  <div class="navbar-collapse"><div class="dropdown">
-    <button class="dropbtn"><i class="fas fa-bars"></i></button>
-    <div class="dropdown-content">
-    <a href="index.html">HOME</a>
-    <a href="milestones.html" class="navbar-active">MILESTONES</a>
-    <a href="grading.html">GRADING</a>
-    <a href="contact.html">CONTACT</a>
-    <a href="about.html">ABOUT</a>
-    <a href="exampleJS.html">JS</a>
-    </div>
-  </div></div>
-</div>
+<nav id="navbar" class="topnav">
+  <button class="icon" onclick="navClick()"><i class="fa fa-bars"></i></button>
+  <ul id="navlist">
+    <li><a href="index.html">HOME</a></li>
+    <li><a class="active" href="milestones.html">MILESTONES</a></li>
+    <li><a href="grading.html">GRADING</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="exampleJS.html">JS</a></li>
+  </ul>
+</nav>
 <!--END NAV SECTION -->
 
 <!--TITLE SECTION-->
-<div class="sub-head">
-    <div class="sub-first"><i class="fas fa-signal fa-2x"></i> Project Milestones</div>
-    <div><p>The website project is broken eight (8) milestones</p>  
-    <p>Due dates for the milestones are posted on Canvas</p>  
-    <p>Both Google Chrome and Microsoft Edge must render each page correctly</p></div>
-</div>
+<header class="sub-head">
+  <h1 class="sub-first"><i class="fas fa-signal fa-2x"></i> Project Milestones</h1>
+  <h2 class="sub-second">The website project is broken eight (8) milestones</h2>  
+  <p>Due dates for the milestones are posted on Canvas
+    <br>Both Google Chrome and Microsoft Edge must render each page correctly</p>
+</header>
 <!--END TITLE SECTION-->
 
 <!-- MAIN SECTION-->
-<div class="main">
+<main class="main">
 
-<div class="main-block">
-<div class="blockGreen">
-  <h4><i class="fas fa-plane-departure fa-2x"></i> Planning</h4>
-  <p><a href="#topic">Topic Report</a></p>
-  <p><a href="#plan">Planning Report</a></p>
-  <p><a href="#siteplan">Site Planning Report</a></p>
-</div>
-<div class="blockYellow">
-  <h4><i class="fas fa-plane fa-2x"></i> Executing</h4>
-  <p><a href="#vc">Version Control Report</a></p>
-  <p><a href="#progress">Progress Report</a></p>
-</div>
-<div class="blockRed">
-  <h4><i class="fas fa-plane-arrival fa-2x"></i> Finalizing</h4>
-  <p><a href="#present">Presentation</a></p>
-  <p><a href="#site">Published Site</a></p>
-  <p><a href="#report">Final Report</a></p>
-</div>
-</div>
+<section class="main-block">
+  <article class="blockGreen">
+    <h3><i class="fas fa-plane-departure fa-2x"></i> Planning</h3>
+    <p><a href="#topic">Topic Report</a></p>
+    <p><a href="#plan">Planning Report</a></p>
+    <p><a href="#siteplan">Site Planning Report</a></p>
+  </article>
+  <article class="blockYellow">
+    <h3><i class="fas fa-plane fa-2x"></i> Executing</h3>
+    <p><a href="#vc">Version Control Report</a></p>
+    <p><a href="#progress">Progress Report</a></p>
+  </article>
+  <article class="blockRed">
+    <h3><i class="fas fa-plane-arrival fa-2x"></i> Finalizing</h3>
+    <p><a href="#present">Presentation</a></p>
+    <p><a href="#site">Published Site</a></p>
+    <p><a href="#report">Final Report</a></p>
+  </article>
+</section>
 
 <h4 class="blockHeader" id="topic">Project Topic and Approval</h4>
-<div class="main-image">
-  <div class="main-caption"><a href="images/topic.png"><img src="images/topic.png" alt="Topic" class="main-inner"></a>
-  <br>Click for larger view</div>
-</div>
+<section class="main-image main-caption">
+  <a href="images/topic.png"><img src="images/topic.png" alt="Topic" class="main-inner"></a>
+  <br>Click for larger view
+</section>
 <h4 class="blockHeader" id="plan">Project Planning</h4>
-<div class="main-image">
-  <div class="main-caption"><a href="images/planning.png"><img src="images/planning.png" alt="Planning" class="main-inner"></a>
-  <br>Click for larger view</div>
-</div>
+<section class="main-image main-caption">
+  <a href="images/planning.png"><img src="images/planning.png" alt="Planning" class="main-inner"></a>
+  <br>Click for larger view
+</section>
 <h4 class="blockHeader" id="siteplan">Project Site Plan</h4>
-<div class="main-image">
-  <div class="main-caption"><a href="images/siteplan.png"><img src="images/siteplan.png" alt="Site Plan" class="main-inner"></a>
-  <br>Click for larger view</div>
-</div>
+<section class="main-image main-caption">
+  <a href="images/siteplan.png"><img src="images/siteplan.png" alt="Site Plan" class="main-inner"></a>
+  <br>Click for larger view
+</section>
 <h4 class="blockHeader" id="vc">Project Version Control</h4>
-<div class="main-image">
-  <div class="main-caption"><a href="images/vc.png"><img src="images/vc.png" alt="Version Control" class="main-inner"></a>
-  <br>Click for larger view</div>
-</div>
+<section class="main-image main-caption">
+  <a href="images/vc.png"><img src="images/vc.png" alt="Version Control" class="main-inner"></a>
+  <br>Click for larger view
+</section>
 <h4 class="blockHeader" id="progress">Project Progress Report</h4>
-<div class="main-image">
-  <div class="main-caption"><a href="images/progress.png"><img src="images/progress.png" alt="Progress Report" class="main-inner"></a>
-  <br>Click for larger view</div>
-</div>
+<section class="main-image main-caption">
+  <a href="images/progress.png"><img src="images/progress.png" alt="Progress Report" class="main-inner"></a>
+  <br>Click for larger view
+</section>
 <h4 class="blockHeader" id="site">Project Website</h4>
-<div class="main-image">
-  <div class="main-caption"><a href="images/website.png"><img src="images/website.png" alt="Website" class="main-inner"></a>
-  <br>Click for larger view</div>
-</div>
+<section class="main-image main-caption">
+  <a href="images/website.png"><img src="images/website.png" alt="Website" class="main-inner"></a>
+  <br>Click for larger view
+</section>
 <h4 class="blockHeader" id="report">Project Final Report</h4>
-<div class="main-image">
-  <div class="main-caption"><a href="images/report.png"><img src="images/report.png" alt="Final Report" class="main-inner"></a>
-  <br>Click for larger view</div>
-</div>
+<section class="main-image main-caption">
+  <a href="images/report.png"><img src="images/report.png" alt="Final Report" class="main-inner"></a>
+  <br>Click for larger view
+</section>
 <h4 class="blockHeader" id="present">Project Presentation</h4>
-<div class="main-image">
-  <div class="main-caption"><a href="images/presentation.png"><img src="images/presentation.png" alt="Presentation" class="main-inner"></a>
-  <br>Click for larger view</div>
-</div>
+<section class="main-image main-caption">
+  <a href="images/presentation.png"><img src="images/presentation.png" alt="Presentation" class="main-inner"></a>
+  <br>Click for larger view
+</section>
 
-</div>
+</main>
 <!-- END MAIN SECTION-->
 
 <!--FOOTER SECTION -->
-<div id="footer">2024 Spring Semester | CMSCI 256</div>
+<footer id="footer">2025 Spring Semester | CMSCI 256</footer>
 <!-- END FOOTER SECTION -->
 
 </body>

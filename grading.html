@@ -10,122 +10,108 @@
   <title>CIS 265 - Grading</title>
   <link rel="icon" href="images/AmboxGlobe.png" >
 
-  <link href="style.css" rel="stylesheet" >
+  <link href="styles/main.css" rel="stylesheet" >
+  <script type="text/javascript" src="javascript/navigation.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
 
 <body>
+<!-- SITENAME SECTION -->
+<div class="sitename">CMSCI 256 <em>Software Development</em></div>
+<!-- END SITENAME SECTION -->
+
 <!-- NAV SECTION -->
-<div class="navbar">
-  <div class="navbar-sitename">CMSCI 256 <em>Software Development</em></div>
-  <div class="navbar-list">
-    <a href="index.html">HOME</a>
-    <a href="milestones.html">MILESTONES</a>
-    <a href="grading.html" class="navbar-active">GRADING</a>
-    <a href="contact.html">CONTACT</a>
-    <a href="about.html">ABOUT</a>
-    <a href="exampleJS.html">JS</a>
-  </div>
-  <div class="navbar-collapse"><div class="dropdown">
-    <button class="dropbtn"><i class="fas fa-bars"></i></button>
-    <div class="dropdown-content">
-    <a href="index.html">HOME</a>
-    <a href="milestones.html">MILESTONES</a>
-    <a href="grading.html" class="navbar-active">GRADING</a>
-    <a href="contact.html">CONTACT</a>
-    <a href="about.html">ABOUT</a>
-    <a href="exampleJS.html">JS</a>
-    </div>
-  </div></div>
-</div>
+<nav id="navbar" class="topnav">
+  <button class="icon" onclick="navClick()"><i class="fa fa-bars"></i></button>
+  <ul id="navlist">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="milestones.html">MILESTONES</a></li>
+    <li><a class="active" href="grading.html">GRADING</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="exampleJS.html">JS</a></li>
+  </ul>
+</nav>
 <!--END NAV SECTION -->
 
 <!--TITLE SECTION-->
-<div class="sub-head">
-    <div class="sub-first"><i class="fas fa-gavel fa-2x"></i> Project Grading</div>
-    <div><p>Requirements are specified on the MILESTONES page</p>    
-    <p>HTML Validator: <a href="https://validator.w3.org/" target="_blank">validator.w3.org</a></p>
-    <p>CSS Validator: <a href="http://jigsaw.w3.org/css-validator/" target="_blank">jigsaw.w3.org/css-validator</a></p></div>
-</div>
+<header class="sub-head">
+  <h1 class="sub-first"><i class="fas fa-gavel fa-2x"></i> Project Grading</h1>
+  <h2 class="sub-second">Requirements are specified on the MILESTONES page</h2>    
+  <p>HTML Validator: <a href="https://validator.w3.org/" target="_blank">validator.w3.org</a><br>
+    CSS Validator: <a href="http://jigsaw.w3.org/css-validator/" target="_blank">jigsaw.w3.org/css-validator</a></p>
+</header>
 <!--END TITLE SECTION-->
 
 <!-- MAIN SECTION-->
-<div class="main">
+<main class="main">
 
-<div class="main-block">
-  <div class="blockGreen">
-    <h4><i class="fas fa-plane-departure fa-2x"></i> Planning</h4>
+<section class="main-block">
+  <article class="blockGreen">
+    <h3><i class="fas fa-plane-departure fa-2x"></i> Planning</h3>
     <p><a href="#topic">Topic Report</a></p>
     <p><a href="#plan">Planning Report</a></p>
     <p><a href="#siteplan">Site Planning Report</a></p>
-  </div>
-  <div class="blockYellow">
-    <h4><i class="fas fa-plane fa-2x"></i> Executing</h4>
+  </article>
+  <article class="blockYellow">
+    <h3><i class="fas fa-plane fa-2x"></i> Executing</h3>
     <p><a href="#vc">Version Control Report</a></p>
     <p><a href="#progress">Progress Report</a></p>
-  </div>
-  <div class="blockRed">
-    <h4><i class="fas fa-plane-arrival fa-2x"></i> Finalizing</h4>
+  </article>
+  <article class="blockRed">
+    <h3><i class="fas fa-plane-arrival fa-2x"></i> Finalizing</h3>
     <p><a href="#present">Presentation</a></p>
     <p><a href="#site">Published Site</a></p>
     <p><a href="#report">Final Report</a></p>
-  </div>
-  </div>
+  </article>
+</section>
 
 <h4 class="blockHeader" id="topic">Project Topic Rubric</h4>
-<div class="main-image">
-  <div class="main-caption"><a href="images/topicRubric.png">
-  <img src="images/topicRubric.png" alt="Topic Rubric" class="main-inner"></a>
-    <br>Click for larger view</div>
-</div>
+<section class="main-image main-caption">
+  <a href="images/topicRubric.png"><img src="images/topicRubric.png" alt="Topic Rubric" class="main-inner"></a>
+    <br>Click for larger view
+</section>
 <h4 class="blockHeader" id="plan">Project Planning Rubric</h4>
-<div class="main-image">
-  <div class="main-caption"><a href="images/planningRubric.png">
-  <img src="images/planningRubric.png" alt="Planning Report Rubric" class="main-inner"></a>
-    <br>Click for larger view</div>
-</div>
+<section class="main-image main-caption">
+  <a href="images/planningRubric.png"><img src="images/planningRubric.png" alt="Planning Report Rubric" class="main-inner"></a>
+  <br>Click for larger view
+</section>
 <h4 class="blockHeader" id="siteplan">Project Site Plan Rubric</h4>
-<div class="main-image">
-  <div class="main-caption"><a href="images/siteplanRubric.png">
-  <img src="images/siteplanRubric.png" alt="Site Plan Rubric" class="main-inner"></a>
-    <br>Click for larger view</div>
-</div>
+<section class="main-image main-caption">
+  <a href="images/siteplanRubric.png"><img src="images/siteplanRubric.png" alt="Site Plan Rubric" class="main-inner"></a>
+  <br>Click for larger view
+</section>
 <h4 class="blockHeader" id="vc">Project Version Control Rubric</h4>
-<div class="main-image">
-  <div class="main-caption"><a href="images/vcRubric.png">
-  <img src="images/vcRubric.png" alt="Version Control Rubric" class="main-inner"></a>
-    <br>Click for larger view</div>
-</div>
+<section class="main-image main-caption">
+  <a href="images/vcRubric.png"><img src="images/vcRubric.png" alt="Version Control Rubric" class="main-inner"></a>
+  <br>Click for larger view
+</section>
 <h4 class="blockHeader" id="progress">Project Progress Report Rubric</h4>
-<div class="main-image">
-  <div class="main-caption"><a href="images/progressRubric.png">
-  <img src="images/progressRubric.png" alt="Progress Report Rubric" class="main-inner"></a>
-    <br>Click for larger view</div>
-</div>
+<section class="main-image main-caption">
+  <a href="images/progressRubric.png"><img src="images/progressRubric.png" alt="Progress Report Rubric" class="main-inner"></a>
+  <br>Click for larger view
+</section>
 <h4 class="blockHeader" id="site">Project Website Rubric</h4>
-<div class="main-image">
-  <div class="main-caption"><a href="images/websiteRubric.png">
-  <img src="images/websiteRubric.png" alt="Website Rubric" class="main-inner"></a>
-    <br>Click for larger view</div>
-</div>
+<section class="main-image main-caption">
+  <a href="images/websiteRubric.png"><img src="images/websiteRubric.png" alt="Website Rubric" class="main-inner"></a>
+  <br>Click for larger view
+</section>
 <h4 class="blockHeader" id="report">Project Final Report Rubric</h4>
-<div class="main-image">
-  <div class="main-caption"><a href="images/reportRubric.png">
-  <img src="images/reportRubric.png" alt="Final Report Rubric" class="main-inner"></a>
-    <br>Click for larger view</div>
-</div>
+<section class="main-image main-caption">
+  <a href="images/reportRubric.png"><img src="images/reportRubric.png" alt="Final Report Rubric" class="main-inner"></a>
+    <br>Click for larger view
+</section>
 <h4 class="blockHeader" id="present">Project Presentation Rubric</h4>
-<div class="main-image">
-  <div class="main-caption"><a href="images/presentationRubric.png">
-  <img src="images/presentationRubric.png" alt="Presentation Rubric" class="main-inner"></a>
-    <br>Click for larger view</div>
-</div>
+<section class="main-image main-caption">
+  <a href="images/presentationRubric.png"><img src="images/presentationRubric.png" alt="Presentation Rubric" class="main-inner"></a>
+    <br>Click for larger view
+</section>
 
-</div>
+</main>
 <!-- END MAIN SECTION-->
 
 <!--FOOTER SECTION -->
-<div id="footer">2024 Spring Semester | CMSCI 256</div>
+<footer id="footer">2025 Spring Semester | CMSCI 256</footer>
 <!-- END FOOTER SECTION -->
 
 </body>
